@@ -1,1 +1,18 @@
 # MHD shell model
+### About
+A shell model for magnetohydrodynamical (MHD) turbulence. 
+
+### Santiago J. Benavides 
+
+(santiago.benavides@upm.es)
+
+### Has two different modes
+1. Full Navier Stokes.
+3. Phase-only. See [Arguedas-Leiva et al. Phys. Rev. Research 4, L032035 (2022)](https://doi.org/10.1103/PhysRevResearch.4.L032035) for info on phase-only formulations.
+
+### Capabilities: 
+* 
+
+### References
+* [Biferale, L., Ann. Rev. Fluid Mech. Vol. 35:441-468 (2003)](https://doi.org/10.1146/annurev.fluid.35.101101.161122)
+* [Plunian, F. et al., Phys. Rep. Volume 523, Issue 1 (2013)](https://doi.org/10.1016/j.physrep.2012.09.001)
