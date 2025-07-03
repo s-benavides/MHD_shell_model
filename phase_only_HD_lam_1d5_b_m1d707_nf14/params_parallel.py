@@ -10,26 +10,6 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-# ################# Thin Layer (A0 = B0, H_3D conserved)
-
-# def A1a(B0b,lam,alpha):
-#     return -lam**(2*alpha)*B1c(B0b,lam,alpha)
-
-# def A1b(B0a,lam,alpha):
-#     return lam**(alpha)*A1c(B0a,lam, alpha)
-
-# def A1c(B0a,lam, alpha):
-#     return -B0a/(1+lam**alpha)
-
-# def B1a(B0c,lam,alpha):
-#     return lam**(alpha)*B1b(B0c,lam,alpha)
-
-# def B1b(B0c,lam,alpha):
-#     return -(1+lam**(alpha))**(-1)*B0c
-
-# def B1c(B0b,lam,alpha):
-#     return -B0b*(1-lam**(2*alpha))**(-1)
-
 ################# 2D MHD (A0 = -B0, A^2 conserved)
 
 def A1a(B0b,lam,alpha):
@@ -71,13 +51,12 @@ A1 = [A1a(B0[1],lam,alpha),A1b(B0[0],lam,alpha),A1c(B0[0],lam, alpha)]
 B1 = [B1a(B0[2],lam,alpha),B1b(B0[2],lam,alpha),B1c(B0[1],lam,alpha)]
 
 eps0 = 0 # energy injection rate of u0 field
-eps1 = 0
-u0_init = 10**(-1.) #1e0
+eps1 = 0 # energy injection rate of u1 (magnetic) field
+u0_init = 10**(-1.) 
 u1_init = 0.0
 nu = 0 #1e-7 # These are references from literature, not actual values. Check code
 nu_l = 0 #0.001 # These are references from literature, not actual values. Check code
-# For later use? 
-Q = 0
+Q = 0 # Not used.
 # KE and ME spectral slopes:
 alpha = 0.0 # KE
 beta = 0.0 # ME
@@ -104,10 +83,10 @@ if len(ps)!=size:
 
 ### 
 # Are we continuing from a previous run?
-overwrite = bool(0) # 1 if starting a new run, 0 if continuing from previous save. 
-today = '2023-10-31'
+overwrite = bool(1) # 1 if starting a new run, 0 if continuing from previous save. 
+today = '2025-07-03'
 
-######`##################################################################
+########################################################################
 ### Do not change anything below this line ###
 
 ##########################
