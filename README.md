@@ -18,3 +18,5 @@ Example directories include two full models (one HD and one MHD) and one phase-o
 ### References
 * [Biferale, L., Ann. Rev. Fluid Mech. Vol. 35:441-468 (2003)](https://doi.org/10.1146/annurev.fluid.35.101101.161122)
 * [Plunian, F. et al., Phys. Rep. Volume 523, Issue 1 (2013)](https://doi.org/10.1016/j.physrep.2012.09.001)
+
+[![DOI](https://zenodo.org/badge/1013186208.svg)](https://doi.org/10.5281/zenodo.15800546)
