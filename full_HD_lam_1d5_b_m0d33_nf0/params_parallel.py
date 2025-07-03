@@ -56,6 +56,7 @@ u0_init = 10**(-2.)
 u1_init = 0.0 
 nu = 2e-7 # These are references from literature, not actual values. Check code
 nu_l = 0.0
+Q = 0 # Not used
 # KE and ME spectral slopes:
 alpha = -2/3. # KE
 beta = 0.0 # ME
