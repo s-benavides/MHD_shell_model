@@ -1,6 +1,6 @@
 # MHD shell model
 ### About
-A shell model for magnetohydrodynamical (MHD) turbulence. 
+A shell model for magnetohydrodynamical (MHD) turbulence. Based on the 'improved' shell model of [L'vov, V. S. et al. Phys. Rev. E 58, 1811 (1998)](https://doi.org/10.1103/PhysRevE.58.1811) extended to MHD.  Uses a fourth-order Runge-Kutta method for time-stepping. 
 
 ### Santiago J. Benavides 
 
