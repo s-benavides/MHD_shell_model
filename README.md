@@ -1,6 +1,6 @@
 # MHD shell model
 ### About
-A shell model for magnetohydrodynamical (MHD) turbulence. Based on the 'improved' shell model of [L'vov, V. S. et al. Phys. Rev. E 58, 1811 (1998)](https://doi.org/10.1103/PhysRevE.58.1811) extended to MHD.  Uses a fourth-order Runge-Kutta method for time-stepping. 
+A shell model for hydrodynamical (HD) and magnetohydrodynamical (MHD) turbulence. Based on the 'improved' shell model of [L'vov, V. S. et al. Phys. Rev. E 58, 1811 (1998)](https://doi.org/10.1103/PhysRevE.58.1811) extended to MHD.  Uses a fourth-order Runge-Kutta method for time-stepping. 
 
 ### Santiago J. Benavides 
 
@@ -8,7 +8,9 @@ A shell model for magnetohydrodynamical (MHD) turbulence. Based on the 'improved
 
 ### Has two different modes
 1. Full Navier Stokes.
-3. Phase-only. See [Arguedas-Leiva et al. Phys. Rev. Research 4, L032035 (2022)](https://doi.org/10.1103/PhysRevResearch.4.L032035) for info on phase-only formulations.
+2. Phase-only. See [Arguedas-Leiva et al. Phys. Rev. Research 4, L032035 (2022)](https://doi.org/10.1103/PhysRevResearch.4.L032035) for info on phase-only formulations.
+
+Example directories include two full models (one HD and one MHD) and one phase-only HD model. The MHD directory creates multiple parallel runs, with varying magnetic energy injection rate. The two HD directories create multiple parallel runs, with varying control parameter $b$ (which controls what the second conserved quantity is). 
 
 ### Capabilities: 
 * Statistics of phases and triad phases.
